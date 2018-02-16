@@ -162,7 +162,7 @@ p {
 .hero-section.centered {
   padding-top: 195px;
   padding-bottom: 195px;
-  background-image: url('../images/hands-people-woman-working-2.png');
+  background-image: url('../images/happy.jpg');
   background-position: 50% 50%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -496,6 +496,7 @@ html.w-mod-js *[data-ix="scale-on-scroll"] {
   .hero-section.centered {
     padding-top: 119px;
     padding-bottom: 119px;
+    background-position: 50% 50%;
   }
   .hero-heading {
     margin-bottom: 15px;
@@ -521,17 +522,15 @@ html.w-mod-js *[data-ix="scale-on-scroll"] {
     padding-top: 60px;
     padding-bottom: 60px;
     background-color: #f0f0f0;
-    background-image: url('../images/golden-gate.png');
+    background-position: 0px -200px;
   }
   .hero-heading {
-    color: #006eb4;
     font-size: 40px;
-    text-shadow: none;
+    text-shadow: 0 2px 2px #000;
   }
   .hero-subheading {
-    color: #006eb4;
     font-size: 21px;
-    text-shadow: none;
+    text-shadow: 0 2px 2px #000;
   }
   .section-subheading.center {
     line-height: 30px;
@@ -543,9 +542,8 @@ html.w-mod-js *[data-ix="scale-on-scroll"] {
     display: none;
   }
   .powered-hero {
-    color: #006eb4;
     font-size: 16px;
-    text-shadow: none;
+    text-shadow: 0 2px 2px #000;
   }
 }
 
