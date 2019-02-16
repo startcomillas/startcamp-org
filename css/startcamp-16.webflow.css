@@ -1,3 +1,15 @@
+/* CUSTOM CSS */
+
+.content {
+  background-image: url('../images/ods.png');
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+
+/* END CUSTOM CSS */
+
 body {
   background-color: #edeff2;
   font-family: 'Open Sans', sans-serif;
@@ -90,7 +102,17 @@ p {
   text-transform: uppercase;
 }
 
+.button.primary {
+  background-color: #eeba31;
+}
+
 .button:hover {
+  overflow: visible;
+  background-color: #dbeeff;
+  color: #eeba31;
+}
+
+.button.primary:hover {
   overflow: visible;
   background-color: #dbeeff;
   color: #eeba31;
@@ -141,8 +163,12 @@ p {
 .section {
   position: relative;
   padding: 80px 10px;
-  background-color: #fff;
+  background-color: rgba(255,255,255,0.8);
   text-align: center;
+}
+
+.section.even {
+  background-color: rgba(200,200,200,0.8);  
 }
 
 .white-box {
@@ -150,7 +176,7 @@ p {
   padding: 15px;
   border: 1px solid #dcebf7;
   border-radius: 5px;
-  background-color: #fff;
+  background-color: rgba(255,255,255,0.8);
   text-align: center;
 }
 
@@ -169,6 +195,7 @@ p {
   background-attachment: fixed;
   text-align: center;
 }
+
 
 .hero-heading {
   margin-bottom: 30px;
@@ -216,6 +243,10 @@ p {
   text-align: center;
   letter-spacing: 3px;
   text-transform: none;
+}
+
+.section-subheading.center.even {
+  color: #333;
 }
 
 .section-title-group {
