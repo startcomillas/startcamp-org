@@ -4,6 +4,7 @@
   background-image: url('../images/ods.png');
   background-position: 50% 50%;
   background-repeat: no-repeat;
+  background-color: #fff;
   text-align: center;
 }
 
@@ -14,6 +15,85 @@
 .mt-20 {
   margin-top: 20px;
 }
+
+/*VIDEO BACKGROUND*/
+.video-background {
+  background: #000;
+  position: fixed;
+  top: 0; right: 0; bottom: 0; left: 0;
+  z-index: -99;
+}
+.video-foreground,
+.video-background iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+#vidtop-content {
+    top: 0;
+    color: #fff;
+}
+.vid-info { position: absolute; top: 0; right: 0; width: 33%; background: rgba(0,0,0,0.3); color: #fff; padding: 1rem; font-family: Avenir, Helvetica, sans-serif; }
+.vid-info h1 { font-size: 2rem; font-weight: 700; margin-top: 0; line-height: 1.2; }
+.vid-info a { display: block; color: #fff; text-decoration: none; background: rgba(0,0,0,0.5); transition: .6s background; border-bottom: none; margin: 1rem auto; text-align: center; }
+@media (min-aspect-ratio: 16/9) {
+  .video-foreground { height: 300%; top: -100%; }
+}
+@media (max-aspect-ratio: 16/9) {
+  .video-foreground { width: 300%; left: -100%; }
+}
+@media all and (max-width: 600px) {
+.vid-info { width: 50%; padding: .5rem; }
+.vid-info h1 { margin-bottom: .2rem; }
+}
+@media all and (max-width: 500px) {
+.vid-info .acronym { display: none; }
+}
+
+/*END VIDEO BACKGROUND*/
+
+/*IMAGE HOVER*/
+.hoverImageContainer {
+  position: relative;
+}
+
+.hoverImage {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.hoverImageOverlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: rgba(100,100,100,0.8);
+}
+
+.hoverImageContainer:hover .hoverImageOverlay {
+  opacity: 1;
+}
+
+.hoverImageText {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+/*END IMAGE HOVE*/
 
 /* END CUSTOM CSS */
 
@@ -195,7 +275,7 @@ p {
 .hero-section.centered {
   padding-top: 195px;
   padding-bottom: 195px;
-  background-image: url('../images/happy.jpg');
+  /*background-image: url('../images/happy.jpg');*/
   background-position: 50% 50%;
   background-size: cover;
   background-repeat: no-repeat;
