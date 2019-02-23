@@ -387,7 +387,7 @@ p {
   padding-right: 5px;
   padding-left: 0px;
   font-family: Poppins, sans-serif;
-  color: #076b1a;
+  color: gray;
   font-size: 16px;
   line-height: 22px;
   text-align: left;
@@ -467,6 +467,7 @@ p {
   font-size: 20px;
   line-height: 34px;
   font-weight: 600;
+  color: #076b1a;
 }
 
 .disclaimer {
@@ -499,6 +500,7 @@ p {
 
 .poppins-bold {
   font-weight: 600;
+  color: #076b1a;
 }
 
 .hr-footer {
