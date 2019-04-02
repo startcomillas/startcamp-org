@@ -1,4 +1,6 @@
 User-agent: *
+Disallow: /index
+Disallow: /bases
 Disallow: /index.html
 Disallow: /bases.html
 Disallow: /images/
